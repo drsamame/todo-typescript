@@ -26,7 +26,7 @@ export const Filters: React.FC<Props> = ({ filterSelected }) => {
       e.preventDefault()
       console.log(filter)
       if (filter !== undefined) {
-        handleFilterChange!(filter)
+        handleFilterChange(filter)
       }
     }
 

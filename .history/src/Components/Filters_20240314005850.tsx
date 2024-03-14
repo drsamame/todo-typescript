@@ -25,8 +25,8 @@ export const Filters: React.FC<Props> = ({ filterSelected }) => {
     (filter: FilterValue) => (e: React.MouseEvent<HTMLAnchorElement>) => {
       e.preventDefault()
       console.log(filter)
-      if (filter !== undefined) {
-        handleFilterChange!(filter)
+      if (filter.length !== undefined) {
+        handleFilterChange(filter)
       }
     }
 
